@@ -1,6 +1,6 @@
  <?php
  function pubMqtt($topic,$msg){
-       $APPID= "projecttce01/"; //enter your appid
+       $APPID= "projecttce01"; //enter your appid
      $KEY = "oSZhkdKRElb5VrR"; //enter your key
     $SECRET = "sgUiL4LTBRRjEidZWK7TcSDd4"; //enter your secret
     $Topic = "$topic"; 
@@ -45,7 +45,7 @@
       echo $response . "\r\n";
     return $response;
 }
-$Topic = "device";
-$lineMsg = "CHECK";
-getMqttfromlineMsg($Topic,$lineMsg);
+ $Topic = "device";
+ $lineMsg = "CHECK";
+ getMqttfromlineMsg($Topic,$lineMsg);
 ?>
